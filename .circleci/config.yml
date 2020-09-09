@@ -21,11 +21,11 @@ jobs:
           name: Build resume
           command: |
             yarn --frozen-lockfile
-            yarn build:resume RESUME.md /tmp/resume.md
+            yarn build:resume RESUME.md /tmp/resume.html
       - save_cache:
           key: v1-resume-{{ .Revision }}
           paths:
-            - /tmp/resume.pdf
+            - /tmp/resume.html
   publish_resume:
     docker:
       - image: cimg/base:stable
@@ -37,4 +37,4 @@ jobs:
           command: apk update && apk add aws-cli
       - run:
           name: Publish resume
-          command: aws s3 cp --acl public-read /tmp/resume.pdf s3://$S3_BUCKET/Resume.pdf
+          command: aws s3 cp --acl public-read /tmp/resume.html s3://$S3_BUCKET/resume.html
