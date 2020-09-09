@@ -14,24 +14,21 @@ workflows:
 jobs:
   build_resume:
     docker:
-      - image: marpteam/marp-cli:v0.21.0
-        entrypoint: sh
+      - image: cimg/node:12.18
     steps:
       - checkout
       - run:
           name: Build resume
           command: |
-            # Interpolate env variables into Markdown
+            yarn --frozen-lockfile
             yarn build:resume RESUME.md /tmp/resume.md
-            # Markdown to PDF
-            node ../.cli/marp-cli.js /tmp/resume.md -o /tmp/resume.pdf
       - save_cache:
           key: v1-resume-{{ .Revision }}
           paths:
             - /tmp/resume.pdf
   publish_resume:
     docker:
-      - image: alpine
+      - image: cimg/base:stable
     steps:
       - restore_cache:
           key: v1-resume-{{ .Revision }}

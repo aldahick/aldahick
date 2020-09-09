@@ -1,1 +1,3 @@
+.circleci/process.yml
 dist
+node_modules

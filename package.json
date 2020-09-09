@@ -4,5 +4,9 @@
   "license": "MIT",
   "scripts": {
     "build:resume": "node scripts/build_resume.js"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "github-markdown-css": "^4.0.0"
   }
 }
