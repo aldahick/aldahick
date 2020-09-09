@@ -27,7 +27,7 @@ jobs:
             # Interpolate env variables into Markdown
             yarn build:resume RESUME.md /tmp/resume.md
             # Markdown to PDF
-            marp .cli/marp-cli.js /tmp/resume.md -o /tmp/resume.pdf
+            node ../.cli/marp-cli.js /tmp/resume.md -o /tmp/resume.pdf
       - persist_to_workspace:
           root: /tmp
           paths:
