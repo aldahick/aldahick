@@ -1,8 +1,5 @@
 version: 2.1
 
-orbs:
-  aws-s3: circleci/aws-s3@1.0.16
-
 workflows:
   build_and_publish:
     jobs:
@@ -41,7 +38,6 @@ jobs:
       - run:
           name: Install AWS CLI
           command: apk update && apk add aws-cli
-      - aws-s3/sync:
-          arguments: --acl public-read
-          from: /tmp/resume.pdf
-          to: s3://$S3_BUCKET/resume.pdf
+      - run:
+          name: Publish resume
+          command: aws s3 sync --acl public-read /tmp/resume.pdf s3://$S3_BUCKET/resume.pdf
