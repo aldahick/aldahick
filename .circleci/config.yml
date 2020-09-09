@@ -8,7 +8,7 @@ workflows:
     jobs:
       - build_resume
       - publish_resume:
-          depends_on:
+          requires:
             - build_resume
           filters:
             branches:
