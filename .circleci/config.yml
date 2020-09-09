@@ -28,7 +28,7 @@ jobs:
             - /tmp/resume.html
   publish_resume:
     docker:
-      - image: cimg/base:stable
+      - image: alpine
     steps:
       - restore_cache:
           key: v1-resume-{{ .Revision }}
