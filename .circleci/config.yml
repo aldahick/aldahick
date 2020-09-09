@@ -40,4 +40,4 @@ jobs:
           command: apk update && apk add aws-cli
       - run:
           name: Publish resume
-          command: aws s3 sync --acl public-read /tmp/resume.pdf s3://$S3_BUCKET/resume.pdf
+          command: aws s3 cp --acl public-read /tmp/resume.pdf s3://$S3_BUCKET/Resume.pdf
