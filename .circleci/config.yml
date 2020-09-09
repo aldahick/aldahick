@@ -1,0 +1,44 @@
+version: 2.1
+
+orbs:
+  aws-s3: circleci/aws-s3@1.0.16
+
+workflows:
+  build_and_publish:
+    jobs:
+      - build_resume
+      - publish_resume:
+          requires:
+            - build_resume
+          filters:
+            branches:
+              only: master
+
+jobs:
+  build_resume:
+    docker:
+      - image: marpteam/marp-cli:v0.21.0
+        entrypoint: sh
+    steps:
+      - checkout
+      - run:
+          name: Build resume
+          command: |
+            # Interpolate env variables into Markdown
+            yarn build:resume RESUME.md /tmp/resume.md
+            # Markdown to PDF
+            node ../.cli/marp-cli.js /tmp/resume.md -o /tmp/resume.pdf
+      - persist_to_workspace:
+          root: /tmp
+          paths:
+            - resume.pdf
+  publish_resume:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - attach_workspace:
+          at: /tmp
+      - aws-s3/sync:
+          arguments: --acl public-read
+          from: /tmp/resume.pdf
+          to: s3://{{ .Environment.S3_BUCKET }}/resume.pdf
