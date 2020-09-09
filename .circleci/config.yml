@@ -44,4 +44,4 @@ jobs:
       - aws-s3/sync:
           arguments: --acl public-read
           from: /tmp/resume.pdf
-          to: s3://{{ .Environment.S3_BUCKET }}/resume.pdf
+          to: s3://$S3_BUCKET/resume.pdf
