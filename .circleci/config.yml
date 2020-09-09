@@ -28,19 +28,19 @@ jobs:
             yarn build:resume RESUME.md /tmp/resume.md
             # Markdown to PDF
             node ../.cli/marp-cli.js /tmp/resume.md -o /tmp/resume.pdf
-      - persist_to_workspace:
-          root: /tmp
+      - save_cache:
+          key: v1-resume-{{ .Revision }}
           paths:
-            - resume.pdf
+            - /tmp/resume.pdf
   publish_resume:
     docker:
-      - image: cimg/base:stable
+      - image: alpine
     steps:
-      - attach_workspace:
-          at: /tmp
+      - restore_cache:
+          key: v1-resume-{{ .Revision }}
       - run:
           name: Install Pip
-          command: sudo apt-get update && sudo apt-get install python3-pip
+          command: apk update && apk add py3-pip
       - aws-s3/sync:
           arguments: --acl public-read
           from: /tmp/resume.pdf
