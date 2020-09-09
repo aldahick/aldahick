@@ -39,8 +39,8 @@ jobs:
       - restore_cache:
           key: v1-resume-{{ .Revision }}
       - run:
-          name: Install Pip
-          command: apk update && apk add py3-pip
+          name: Install AWS CLI
+          command: apk update && apk add aws-cli
       - aws-s3/sync:
           arguments: --acl public-read
           from: /tmp/resume.pdf
