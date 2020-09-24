@@ -1,6 +1,6 @@
 ### hello
 
-Currently trying to keep fraud from happening @ [NS8](https://github.com/ns8inc) which is pretty cool
+Currently building a better virtual management solution @ [Hyperqube](https://hyperqube.io) which is pretty cool
 
 #### my favorite things
 
