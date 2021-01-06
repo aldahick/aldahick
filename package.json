@@ -6,7 +6,7 @@
     "build:resume": "node scripts/build_resume.js"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "github-markdown-css": "^4.0.0"
   }
 }
