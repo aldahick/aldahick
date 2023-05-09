@@ -1,0 +1,12 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  github-markdown-css:
+    specifier: ^5.2.0
+    version: 5.2.0
+
+packages:
+
+  /github-markdown-css@5.2.0:
+    resolution: {integrity: sha512-hq5RaCInSUZ48bImOZpkppW2/MT44StRgsbsZ8YA4vJFwLKB/Vo3k7R2t+pUGqO+ThG0QDMi96TewV/B3vyItg==}
+    dev: false

@@ -1,0 +1,23 @@
+name: publish-resume
+run-name: ${{ github.actor }} is publishing a new resume
+on:
+  push:
+    branches: [ main ]
+    paths: [ README.md ]
+jobs:
+  publish_resume:
+    name: Build resume and publish it to personal site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.x
+      - uses: pnpm/action-setup@v2
+      - run: pnpm i
+      - run: pnpm build resume.html
+      - env:
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          DEST_URL: ${{ secrets.DEST_URL }}
+        run: >
+          curl -H "Authorization: $AUTH_TOKEN" -X POST -d @resume.html "$DEST_URL"

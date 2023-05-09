@@ -1,6 +1,6 @@
 # Alex Hicks
 
-(Hey, check out this resume's [source](https://github.com/aldahick/aldahick)!)
+[source](https://github.com/aldahick/aldahick)
 
 ## Contact Info
 
@@ -13,52 +13,55 @@ Phone    | [{{CONTACT_PHONE}}](tel:{{CONTACT_PHONE}})
 
 ## Skills
 
-I'm a pretty solid violinist, more of an amateur cyclist, and an atrocious singer. But, professionally:
-
-- Node.JS, Typescript, and React, everything you'd want in a modern full-stack dev
-- Docker, CircleCI, and all kinds of AWS (EC2, S3, SQS, and RDS, to name a few)
-- PostgreSQL, MongoDB, and MySQL, because we all like data and doing stuff with it
-- REST / GraphQL API design
-- Team leadership and system architecture
+- Web development: I've successfully greenfielded core products as the sole or lead developer.
+  - with backends: Node.JS (Typescript!), Go, .NET, PHP, Java
+  - and frontends: React, Vue, Bootstrap/jQuery
+  - and interfaces: GraphQL, (g)RPC, REST, Websockets, TCP/UDP sockets
+  - and stores: Postgres, MariaDB, Redis, MongoDB
+- Devops: See above - it's not just about writing pages and endpoints!
+  - with containers: Docker (compose), Kubernetes, AWS ECS
+  - and pipelines: Github Actions, CircleCI, Buildkite, Jenkins
+  - and infra-as-code: Terraform. Just a lot of Terraform.
+  - and clouds: Years spent watching the AWS Console evolve to be _slightly_ better
 
 ## Experience
 
-<!-- markdownlint misidentifies the date italicization as a subheader  >
-<!-- markdownlint-disable no-emphasis-as-header -->
+### Senior Software Engineer @ Adomni
 
-### Software Engineer @ [NS8](https://ns8.com)
+- Led major refactors of legacy systems, modernizing codebases and improving dev experiences
+- Disaggregated low-latency systems from Lambda to ECS, saving boatloads of money
+- Implemented critical features in high-demand systems while improving performance and reducing complexity (bzz)
 
-_July 2020 - Present_
+### Principal Software Engineer @ HyperQube
 
-- Reimplemented large portions of automated pipeline configs for performance improvements
-- Pivoted repeatedly and successfully to meet business needs
+- Led development of new SaaS platform, from concept to release in 6 months
+- Led development of existing on-premise platform, improving reliability and user experience during transition to SaaS
+- Hired and managed a diverse team of front-end engineers
+- Took on project management role, planning and executing long-term product roadmaps
+- Sole back-end / devops engineer and primary front-end engineer
 
-### Software Engineer @ [Sharpen](https://sharpencx.com)
+### Software Engineer @ NS8
 
-_November 2019 - June 2020_
+- I mostly worked on hours-long SAP CI pipelines for 3 months, until the company [caught](https://www.forbes.com/sites/davidjeans/2020/09/11/fraud-prevention-startup-ns8-fraud-investigation-sec/) [fire](https://www.reuters.com/legal/government/ex-ceo-antifraud-startup-ns8-sentenced-five-years-fraud-charge-2022-11-03/). Oh well!
 
-- Designed / implemented management system for internal use by DevOps & Customer Support
-- Provided prompt, efficient DevOps support for infrastructure outages & customer reports
-- Architected and implemented replacements for dysfunctional legacy systems
+### Software Engineer @ Sharpen
 
-### Software Engineer @ [Structural](https://structural.com)
+- Designed / implemented platform management system for internal team use
+- Architected / implemented replacements for core legacy systems
 
-_August 2018 - November 2019_
+### Software Engineer @ Structural
 
-- Built a rapidly expanding API service, growing from 6k to 61k users in 1 year
-- Implemented major enterprise integrations to support clients’ needs
+- Built a rapidly expanding API service, growing users 10x annually
+- Implemented major integrations to support enterprise clients’ needs
 
-### Senior Software Engineer @ [Crossroads Education](https://crossroadseducation.org)
+### Senior Software Engineer @ Crossroads Education
 
-_January 2017 - August 2018_
-
-- Led software & design teams to build flagship SaaS products for major universities, 120k users
+- Led software & design teams to build new flagship SaaS products
 - Architected backend for products using Node.JS, ElasticSearch, and PostgreSQL
 - Implemented scalable deployment systems for all products using Docker and AWS
-- Mentored junior engineers on essential full-stack concepts
 
 ## Education
 
 ### Indiana University &mdash; Purdue University, Indianapolis
 
-Bachelor's Degree in Computer Science, 2021
+Bachelor's Degree in Computer Science, December 2023

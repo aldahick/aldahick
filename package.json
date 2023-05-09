@@ -1,12 +1,13 @@
 {
   "name": "@aldahick/aldahick",
-  "version": "0.0.0",
+  "description": "A basic resume & supporting devops code",
+  "version": "0.1.0",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "build:resume": "node scripts/build_resume.js"
+    "build": "node scripts/build.mjs RESUME.md"
   },
   "dependencies": {
-    "axios": "^0.20.0",
-    "github-markdown-css": "^4.0.0"
+    "github-markdown-css": "^5.2.0"
   }
 }
