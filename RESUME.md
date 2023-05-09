@@ -22,7 +22,6 @@ Phone    | [{{CONTACT_PHONE}}](tel:{{CONTACT_PHONE}})
   - with containers: Docker (compose), Kubernetes, AWS ECS
   - and pipelines: Github Actions, CircleCI, Buildkite, Jenkins
   - and infra-as-code: Terraform. Just a lot of Terraform.
-  - and clouds: Years spent watching the AWS Console evolve to be _slightly_ better
 
 ## Experience
 
