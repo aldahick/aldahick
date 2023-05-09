@@ -20,7 +20,7 @@ jobs:
       - run: pnpm build resume.html
         env:
           CONTACT_PHONE: ${{ secrets.CONTACT_PHONE }}
-      - run: 'curl -H "Authorization: $AUTH_TOKEN" -X POST -d @resume.html "$DEST_URL"'
+      - run: 'curl -H "Authorization: $AUTH_TOKEN" -X POST -F file=@resume.html "$DEST_URL"'
         env:
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
           DEST_URL: ${{ secrets.DEST_URL }}
