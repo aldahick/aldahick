@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is publishing a new resume
 on:
   push:
     branches: [ main ]
-    paths: [ README.md, RESUME.md, '.github/**' ]
+    paths: [ RESUME.md, '.github/**' ]
 jobs:
   publish_resume:
     name: Build resume and publish it to personal site
