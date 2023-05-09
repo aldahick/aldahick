@@ -1,13 +1,9 @@
-### hello
+# hello!
 
-Currently building a better virtual management solution @ [Hyperqube](https://hyperqube.io) which is pretty cool
+I write code, pedal 🚲, and saw wood 🎻
 
-#### my favorite things
+You might check out [Athena](https://github.com/aldahick/athena), a web API framework with all kinds of opinionation and streamlining. Like an aero bike, but less expensive.
 
-- [Athena](https://github.com/aldahick/athena), a web API framework with all kinds of opinionation and power
-- Rex ([API](https://github.com/aldahick/rex-api) and [front-end](https://github.com/aldahick/rex-web)), a big dumping ground for the fun ideas I come up with.
-- My continuously-integrated and -deployed resume, [in this very repo](https://github.com/aldahick/aldahick).
+Or, if basic continuous deployment is more your jam, [this very repo](https://github.com/aldahick/aldahick) hosts my resume and associated code.
 
-My repositories are littered with neat stuff that I don't want to delete, and terrible stuff that I'm afraid to delete.
-
-If you want to talk to me for some reason, I guess email me? Or send a carrier pigeon somewhere
+[Many other miscellaneous projects](https://github.com/aldahick?tab=repositories) await your scrutiny — or, just [talk to me](alex@alexhicks.net)!
