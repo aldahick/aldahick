@@ -1,9 +1,3 @@
-# hello!
+Hi! I'm Alex, and I've been doing this to myself for 8 years. Thankfully most of my employers in that time have used Github, because I sit around building projects and getting familiar with new stacks here. For instance, I'm learning Rust by making a [map game](https://github.com/aldahick/mapgame), and implementing some hard-learned GraphQL practices in a Typescript package [@athenajs/core](https://github.com/aldahick/athena). Previously, I've dabbled in everything from [games](https://github.com/aldahick/dotter) to [auto-generated VMware clients](https://github.com/hyperqube-io/vsphere-soap) to [MVC frameworks](https://github.com/crossroads-education?q=eta&type=source&language=&sort=stargazers). I'm also a violinist, cellist, and cyclist; so if I'm not writing, I'm likely dodging potholes or repeating measures.
 
-I write code, pedal 🚲, and saw wood 🎻
-
-You might check out [Athena](https://github.com/aldahick/athena), a web API framework currently refocusing on Fastify and better extensibility.
-
-Or, if basic continuous deployment is more your jam, [this very repo](https://github.com/aldahick/aldahick) hosts my resume and associated code.
-
-[Many other miscellaneous projects](https://github.com/aldahick?tab=repositories) await your scrutiny — or, just [talk to me](alex@alexhicks.net)!
+(I'm looking for a job! If you like what you've seen so far, I'm probably a great fit. [Let's talk!](alex@alexhicks.net))
